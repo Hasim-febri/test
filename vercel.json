@@ -3,13 +3,18 @@
   "builds": [
     {
       "src": "api/*.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": { 
+        "runtime": "nodejs20.x",
+        "supportsResponseStreaming": true
+      }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "/api/$1",
+      "methods": ["GET", "POST"]
     }
   ]
 }

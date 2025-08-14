@@ -1,6 +1,7 @@
-export default (req, res) => {
+    // Gunakan export ES Modules yang eksplisit
+export default function handler(req, res) {
     res.status(200).json({ 
-      message: "Halo dari Vercel!",
+      message: "Ini berhasil!",
       timestamp: new Date().toISOString()
     });
-  };
+  }

@@ -1,10 +1,11 @@
 {
-    "name": "simple-vercel-backend",
-    "version": "1.0.0",
-    "scripts": {
-      "start": "vercel dev"
-    },
-    "dependencies": {
-      "@vercel/node": "^2.0.0"
-    }
+  "name": "simple-vercel-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/node": "^2.0.0"
   }
+}
